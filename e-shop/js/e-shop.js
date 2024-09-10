@@ -12,8 +12,16 @@ document.body.insertBefore(newH3, item3[0]);
 // document.body.append(newH3);
 
 // const img = document.createElement("img")
-// img.src = /assets/product1.jpeg;
+// img.src = "../data/product1.jpeg;"
 // document.body.append("img")
+let res = document.getElementById('card');
+
+            const card = document.getElementById('card')
+            let img = document.createElement('img');
+            img.src = '../e-shop/data/product1.jpeg';
+            card.append(img);
+            img.classList.add('card-img');
+
 // let items4 = document.getElementById("items4");
 // console.log(products);
 // products.forEach((item) => {

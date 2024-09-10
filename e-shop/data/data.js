@@ -1,7 +1,7 @@
 export let products = [
   {
     title: "Product one",
-    image: "./assets/product1.jpeg",
+    image: "./data/product1.jpeg",
     price: "300$",
     category: "Men",
     size: "M",
