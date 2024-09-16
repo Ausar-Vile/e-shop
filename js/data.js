@@ -9,7 +9,7 @@ export let products = [
   {
     title: "Product two",
     image: "../images/product2.jpeg",
-    price: "440$",
+    price: "45$",
     category: "Women",
     size: "L",
   },
@@ -30,7 +30,7 @@ export let products = [
   {
     title: "Product five",
     image: "../imagesproduct5.jpeg",
-    price: "4400$",
+    price: "400$",
     category: "Men",
     size: "s",
   },
