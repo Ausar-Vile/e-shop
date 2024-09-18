@@ -18,7 +18,7 @@ document.body.insertBefore(newH3, item3[0]);
 // item 1
 let res = document.getElementById('card');
 
-            const card = document.getElementById('card');
+             card = document.getElementById('card');
             let img = document.createElement('img');
             img.src = '../e-shop/images/product1.jpeg';
             card.append(img);
@@ -33,9 +33,9 @@ document.body.append(pes);
     
     let tes = document.getElementById('card2')
     const img2 = document.createElement('img');
-    img.src = '../e-shop/images/product2.jpeg';
+    img2.src = '../e-shop/images/product2.jpeg';
     tes.append(img2);
-
+    img2.classList.add('card-img');
 
 // let items4 = document.getElementById("items3");
 // console.log(products);
