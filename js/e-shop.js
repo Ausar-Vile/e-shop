@@ -9,6 +9,8 @@ newH3.id = "description"
 
 const item3 = document.querySelectorAll(".items3");
 document.body.insertBefore(newH3, item3[0]);
+document.getElementById('items3').style.display = 'flex';
+
 // document.body.append(newH3);
 
 // const img = document.createElement("img")
@@ -36,6 +38,19 @@ document.body.append(pes);
     img2.src = '../e-shop/images/product2.jpeg';
     tes.append(img2);
     img2.classList.add('card-img');
+
+let ves = document.createElement('div');
+ves.classList.add('card');
+ves.setAttribute('id', 'card3');
+document.body.append(ves);
+
+let qes = document.getElementById('card3');
+const img3 = document.createElement('img');
+img3.src = '../e-shop/images/product3.jpeg';
+qes.append(img3);
+img3.classList.add('card-img');
+
+
 
 // let items4 = document.getElementById("items3");
 // console.log(products);
