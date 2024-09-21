@@ -2,6 +2,10 @@
     padding: 0;
     margin: 0;
 }
+.page-container {
+ padding: 0px 15px;
+ height: 100%;
+}
 body{
     font-family: "Poppins", sans-serif;
 }
@@ -10,6 +14,12 @@ h1{
 }
 .Geschäft{
   text-decoration: none;
+}
+.Geschäft h1{
+  
+  font-size: x-large;
+  padding: 0;
+  margin: 0%;
 }
 .banner {
   background-color: green;
@@ -37,13 +47,12 @@ h1{
   padding: 10px;
   cursor: pointer;
   border-radius: 50px;
- transform: translateX(500px);
+ /* transform: translateX(500px); */
 }
 .options , .sortby{
-  margin: 15px;
   margin-top: 50px;
   justify-content: space-between;
-  margin-left: 5%;
+  
 }
 .option{
   border: none;
@@ -101,7 +110,7 @@ h1{
     border: 2px solid gray; 
     background-color: white;
     margin-top: 15px;
-    margin-left: 50px;
+    /* margin-left: 50px; */
 }
   .card-img {
     width: 100%;
@@ -119,13 +128,14 @@ h1{
     height: 25px;
     border: 0;
     display: flex;
+    padding: 5px;
 }
 .center{
-  width: 95%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 35px;  
+  /* margin-left: 35px;   */
   background-color: rgb(255, 226, 231);
   height: 250x;
 }
@@ -136,6 +146,7 @@ h1{
   color: green;
   justify-content: center;
   align-items: center;
+  padding-bottom: 50px;
   
 }
 .person{
@@ -155,13 +166,13 @@ h1{
   cursor: pointer;
 }
 h3{
-  margin-left: 50px;
+  /* margin-left: 50px; */
   margin-top: 50px;
 }
 .product-info{
   display: flex;
   gap: 50px;
-  margin-left: 50px;
+  /* margin-left: 50px; */
 }
 .add-cart{
   font-size: 10px;
@@ -169,7 +180,7 @@ h3{
   border-radius: 50px;
   border: 1px solid black;
   background-color: white;
-  margin-left: 50px;
+  /* margin-left: 50px; */
 }
 .add-cart:hover{
   background-color: green;
@@ -178,7 +189,7 @@ h3{
 }
 .star{
   width: 105px;
-  margin-left: 50px;
+  /* margin-left: 50px; */
 }
 .card-img1{
   width: 150px;
@@ -189,8 +200,8 @@ h3{
   margin-bottom: 20px;
   justify-content: center;
   align-items: center;
-  gap: 3%;
-  margin-right: 5px;
+  gap: 50px;
+  /* margin-right: 5px; */
 
 }
 .search-icon{
