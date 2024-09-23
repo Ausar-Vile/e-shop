@@ -50,8 +50,11 @@ products.forEach((item) => {
   let pTitle = document.createElement("p");
 
   img.src = item.image;
+  img.classList.add('card-image');
   pTitle.textContent = item.title;
   card.appendChild(img);
+  // let item = document.createElement('div');
+  // item.classList.add('product-info');
   card.append(pTitle);
   cards_container.appendChild(card);
 });
