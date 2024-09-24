@@ -27,18 +27,18 @@ export let products = [
     category: "Kids",
     size: "M",
   },
-  {
-    title: "Product five",
-    image: "./images/product5.jpeg",
-    price: "400$",
-    category: "Men",
-    size: "s",
-  },
-  {
-    title: "Product six",
-    image: "./images/product6.jpeg",
-    price: "100$",
-    category: "Men",
-    size: "s",
-  },
+  // {
+  //   title: "Product five",
+  //   image: "./images/product5.jpeg",
+  //   price: "400$",
+  //   category: "Men",
+  //   size: "s",
+  // },
+  // {
+  //   title: "Product six",
+  //   image: "./images/product6.jpeg",
+  //   price: "100$",
+  //   category: "Men",
+  //   size: "s",
+  // },
 ];

@@ -1,7 +1,5 @@
 import { products } from "./data.js";
 
-// document.body.append(newH3);
-
 // const img = document.createElement("img")
 // img.src = "../data/product1.jpeg;"
 // document.body.append("img")
@@ -40,22 +38,34 @@ import { products } from "./data.js";
 // img3.classList.add('card-img');
 
 
-
 let cards_container = document.getElementById("items3");
 console.log(products);
 products.forEach((item) => {
+  let iTes = document.createElement('div');
   let card = document.createElement("div");
   card.classList.add('card')
   let img = document.createElement("img");
+  let pDiv = document.createElement('div');
+  pDiv.classList.add('product-info');
   let pTitle = document.createElement("p");
 
-  img.src = item.image;
-  img.classList.add('card-image');
+  img.src = item.image; 
   pTitle.textContent = item.title;
   card.appendChild(img);
-  // let item = document.createElement('div');
-  // item.classList.add('product-info');
-  card.append(pTitle);
+  img.classList.add('card-img');
+  // iTes.appendChild(cards_container);
+  pDiv.appendChild(pTitle);
   cards_container.appendChild(card);
 });
 
+async function getProducts() {
+  try {
+    let products = await fetch("https://fakestoreapi.com/products");
+    let data = await products.json();
+    console.log(data);
+    showResult(data);
+  } catch (error) {
+    showError("Something wrong happen in the api call");
+  }
+}
+console.log(getProducts());
