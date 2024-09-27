@@ -1,31 +1,39 @@
 export let products = [
   {
-    title: "Product one",
+    title: "Canon 17Z Camera",
     image: "./images/product1.jpeg",
     price: "300$",
     category: "Men",
+    stars: './images/Star.png',
     size: "M",
+    button: 'ADD IN CART'
   },
   {
-    title: "Product two",
+    title: "Samsung Smart Watch",
     image: "./images/product2.jpeg",
-    price: "45$",
+    price: "75$",
     category: "Women",
+    stars: './images/Star.png',
     size: "L",
+    button: 'ADD IN CART'
   },
   {
-    title: "Product three",
+    title: "Women's BB cream",
     image: "./images/product3.jpeg",
     price: "40$",
     category: "Kids",
+    stars: './images/Star.png',
     size: "S",
+    button: 'ADD IN CART'
   },
   {
-    title: "Product forth",
+    title: "Dove's Moisturizer",
     image: "./images/product4.jpeg",
-    price: "300$",
+    price: "35$",
     category: "Kids",
+    stars: './images/Star.png',
     size: "M",
+    button: 'ADD IN CART'
   },
   // {
   //   title: "Product five",
