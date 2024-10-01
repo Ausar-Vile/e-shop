@@ -195,7 +195,7 @@ h3{
   width: 150px;
   margin-left: 15px;
 }
-.items{
+.items , .items3{
   display: flex;
   margin-bottom: 20px;
   justify-content: center;
