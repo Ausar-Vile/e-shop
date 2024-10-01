@@ -58,7 +58,7 @@ async function getProducts() {
     let products = await fetch("https://fakestoreapi.com/products");
     let data = await products.json();
     console.log(data, "product from api");
-    showItems(data.slice(0, 3));
+    showItems(data.slice(0, 4));
   } catch (error) {
     // showError("Something wrong happen in the api call");
   }
@@ -82,5 +82,26 @@ function showCartItems(cart) {
     // create delete btn
   });
 }
-
+const trash_icon = document.getElementById("trash_icon");
+const apply_btn = document.querySelector(".apply");
+apply_btn.addEventListener("click", () => {
+  if (!isEdit) {
+    let randomId = Math.random(9, 4);
+    console.log(randomId);
+    data.push({ name: task_input.value, id: randomId, select: false });
+    layout.classList.toggle("hide");
+    showTasks();
+  } else {
+    editItem(editId);
+    layout.classList.toggle("hide");
+    isEdit = false;
+  }
+});
+export function deleteItem(id) {
+  const filterdTasks = data.filter((item) => {
+    return item.id != id;
+  });
+  // tasks = filterdTasks;
+  showTasks(filterdTasks);
+}
 getProducts();

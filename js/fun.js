@@ -24,6 +24,12 @@ export function showItems(data) {
     let btn = document.createElement("button");
     btn.classList.add("add-cart");
     img.src = item.image;
+    const trashIcon = document.createElement("img");
+      trashIcon.src = "./images/trash.svg";
+      trashIcon.id = "trash_icon";
+      trashIcon.addEventListener("click", () => {
+        deleteItem(task.id);
+      });
     starImage.src = "./images/Star.png";
     pPrice.textContent = item.price;
     pTitle.textContent = item.title;
