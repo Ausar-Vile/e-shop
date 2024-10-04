@@ -1,4 +1,5 @@
 import { addToCart } from "./e-shop.js";
+// import { products } from "./data.js";
 
 let cards_container = document.getElementById("items3");
 export function showItems(data) {
@@ -39,13 +40,14 @@ export function showItems(data) {
     btn.addEventListener("click", () => {
       addToCart(item);
     });
-    card_item.appendChild(btn);
+    card_item.appendChild(pDiv);
     stars.appendChild(starImage);
     card_item.appendChild(stars);
+    card_item.appendChild(btn);
 
     img_container.appendChild(img_warrper);
     // img.classList.add("card-img");
-    card_item.appendChild(pDiv);
+    
     pDiv.prepend(pPrice);
     pDiv.appendChild(pTitle);
     card_item.prepend(img_container);

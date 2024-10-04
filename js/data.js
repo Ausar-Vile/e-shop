@@ -1,35 +1,35 @@
 export let products = [
   {
-    title: "Canon 17Z Camera",
-    image: "./images/product1.jpeg",
-    price: "300$",
+    title: "bose headset",
+    image: "./images/headphones.jpg",
+    price: "$499.99",
     category: "Men",
     stars: './images/Star.png',
     size: "M",
     button: 'ADD IN CART'
   },
   {
-    title: "Samsung Smart Watch",
-    image: "./images/product2.jpeg",
-    price: "75$",
+    title: "Sony Headset",
+    image: "./images/headphones2.jpeg",
+    price: "$799.99",
     category: "Women",
     stars: './images/Star.png',
     size: "L",
     button: 'ADD IN CART'
   },
   {
-    title: "Women's BB cream",
-    image: "./images/product3.jpeg",
-    price: "40$",
+    title: "Apple headset",
+    image: "./images/headphones3.jpg",
+    price: "$399.99",
     category: "Kids",
     stars: './images/Star.png',
     size: "S",
     button: 'ADD IN CART'
   },
   {
-    title: "Dove's Moisturizer",
-    image: "./images/product4.jpeg",
-    price: "35$",
+    title: "Gaming headset",
+    image: "./images/headphones4.jpg",
+    price: "$999.99",
     category: "Kids",
     stars: './images/Star.png',
     size: "M",

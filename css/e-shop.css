@@ -120,6 +120,7 @@ h1{
     justify-content: space-evenly;
     display: flex;
     margin-bottom: 15px;
+    cursor: pointer;
 }
 .search{
     border-radius: 5px;
