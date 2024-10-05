@@ -4,11 +4,14 @@ console.log(products);
 products.forEach((item) => {
   let iTes = document.createElement('div');
   iTes.classList.add("item");
+  let a = document.createElement('a');
+  a.setAttribute('href',"./html/item1.html");
+  a.innerText = 'link text';
   let card = document.createElement("div");
   card.classList.add('card')
   let img = document.createElement("img");
   img.style.width = '150px';
-  img.style.margin='0 15px'
+  img.style.margin='0 15px';
   let pDiv = document.createElement('div');
   pDiv.classList.add('product-info');
   let stars = document.createElement('div');
@@ -27,6 +30,7 @@ products.forEach((item) => {
 
 
   document.getElementById('items1').appendChild(iTes);
+  iTes.appendChild(a);
   img.src = item.image; 
   starImage.src = item.stars;
   pPrice.textContent = item.price
@@ -63,8 +67,7 @@ async function getProducts() {
     let products = await fetch("https://fakestoreapi.com/products");
     let data = await products.json();
     console.log(data, "product from api");
-    showItems(data.slice(0, 4)),
-    showItems(data.slice(5, 9));
+    showItems(data.slice(0, 4));
   } catch (error) {
     // showError("Something wrong happen in the api call");
   }

@@ -228,10 +228,12 @@ h3{
         margin-right: 15px;
       }
       .toggles , .sort-by{
+        display: flex;
         flex-direction: column;
         gap: 15px;
         justify-content: center;
         align-items: center;
+        margin: 15px;
       }
       .sort-by{
         align-self: center;
