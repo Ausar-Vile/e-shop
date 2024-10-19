@@ -208,6 +208,9 @@ h3{
   width: 20px;
   margin-right: 5px;
 }
+#product_img_cart{
+  width: 30px;
+}
 @media only screen and (max-width: 640px) {
       .banner {
         flex-direction: column;
